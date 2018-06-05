@@ -5,7 +5,7 @@ class LockInAmp:
         self._lockInFreq = lockInFreq
         self._fs = fs
 
-    def lockin(self, signal, out_format="complex"):
+    def lockin(self, signal):
         reference_timestamp = np.arange(0, len(signal), 1) * 1/self._fs
         reference_signal = np.exp(- 1j * 2* np.pi * self._lockInFreq * reference_timestamp)
 
