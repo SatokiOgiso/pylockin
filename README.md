@@ -8,6 +8,9 @@ Tiny class for lockin in python
 
 
 ```
+import numpy as np
+from lockin import LockInAmp
+
 #generate test signal
 dt = 0.001
 timewindow = 1
